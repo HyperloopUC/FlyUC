@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0187396c-0d08-444a-9386-513530370cc8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/Dock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/GradientPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cImageView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/splashScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="0187396c-0d08-444a-9386-513530370cc8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +29,8 @@
       <file leaf-file-name="splashScreen.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/splashScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="764">
-              <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+            <state relative-caret-position="238">
+              <caret line="33" column="56" lean-forward="true" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -299,22 +290,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3296593" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32892057" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24541752" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24541752" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.175" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -524,8 +514,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/splashScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="52" column="37" lean-forward="true" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+        <state relative-caret-position="238">
+          <caret line="33" column="56" lean-forward="true" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
