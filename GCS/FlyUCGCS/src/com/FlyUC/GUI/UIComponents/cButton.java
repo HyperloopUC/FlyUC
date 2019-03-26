@@ -59,10 +59,12 @@ public class cButton extends JComponent {
 
     public void setHorizontalMargin(int margin){
         this.horizontalMargin = margin;
+        this.setWidth(this.getWidth()+(2*margin));
     }
 
     public void setVerticalMargin(int margin){
         this.verticalMargin = margin;
+        this.setHeight(this.getHeight()+(2*margin));
     }
 
     public void setfontSize(int size) { this.fontSize = size; }
@@ -72,6 +74,10 @@ public class cButton extends JComponent {
     public void setPrimaryColor(Color backColor) { this.primaryColor = backColor; }
 
     public void setFont(String font){ this.buttonFont = new Font(this.buttonFont.getFontName(), Font.PLAIN, this.fontSize); }
+
+    public int getButtonHeight(){ return this.height; }
+
+    public int getButtonWidth(){ return this.width; }
 
     public void setIsHovering(){
         if(this.isHovering){
@@ -101,7 +107,12 @@ public class cButton extends JComponent {
             }
         }else{
             //Not hovering, normal state
-            int startX = (this.getParent().getWidth()/2);
+            int  startX= ((getWidth()/2 - this.getButtonWidth()/2)+this.horizontalMargin + this.getButtonHeight()/2);
+            int finalX = ((getWidth()-this.getButtonWidth()/2)-this.horizontalMargin - this.getButtonHeight()/2);
+            int startY = ((getHeight()/2 - this.getButtonHeight() + this.verticalMargin));
+            int finalY = ((getWidth()/2 - this.getButtonHeight()) - this.verticalMargin);
+            g2.fillRect(startX,startY,finalX,finalY);
+            //g2.fillOval(this.verticalMargin/2 + this.horizontalMargin);
           //FIXME: Button does not center   g2.fillRect((this.getParent().getWidth()/2)+(this.height/2)-this.getWidth(),verticalMargin,(this.width-(this.getHeight()/2)-horizontalMargin),this.height-verticalMargin);
         }
         g2.setColor(this.foreGroundColor);
