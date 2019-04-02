@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0187396c-0d08-444a-9386-513530370cc8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/iconButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/resources/images/flyuc.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/UIComponents/GradientPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/UIComponents/GradientPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/UIComponents/cButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/UIComponents/cButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/UIComponents/cImageView.class" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/UIComponents/cImageView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/splashScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/splashScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/Images/FlyUC.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/GradientPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/GradientPane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cImageView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/splashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/splashScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/Images/FlyUC.png" beforeDir="false" />
-    </list>
+    <list default="true" id="0187396c-0d08-444a-9386-513530370cc8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GradientPane.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GradientPane.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/GradientPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="34" column="105" lean-forward="true" selection-start-line="34" selection-start-column="105" selection-end-line="34" selection-end-column="105" />
+            <state relative-caret-position="897">
+              <caret line="43" column="78" lean-forward="true" selection-start-line="43" selection-start-column="78" selection-end-line="43" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,7 +56,7 @@
       <file leaf-file-name="cImageView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cImageView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1137">
+            <state relative-caret-position="391">
               <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -82,17 +68,20 @@
       <file leaf-file-name="iconButton.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/iconButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="824">
+              <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cButton.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cButton.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2484">
-              <caret line="114" column="70" lean-forward="true" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="70" />
+            <state relative-caret-position="73">
+              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,8 +116,8 @@
         <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/splashScreen.java" />
         <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java" />
         <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cImageView.java" />
-        <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/iconButton.java" />
         <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/GradientPane.java" />
+        <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/iconButton.java" />
       </list>
     </option>
   </component>
@@ -305,13 +294,13 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24448898" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24448898" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.3297619" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.175" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.175" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296593" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -518,10 +507,10 @@
     <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/resources/images/flyuc.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/Main.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/RadialGradientPaint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        <state relative-caret-position="2948">
+          <caret line="397" column="30" selection-start-line="397" selection-start-column="11" selection-end-line="397" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -532,6 +521,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/GradientPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="43" column="78" lean-forward="true" selection-start-line="43" selection-start-column="78" selection-end-line="43" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/Dock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -539,17 +545,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home/lib/src.zip!/java.desktop/java/awt/RadialGradientPaint.java">
+    <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cImageView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2948">
-          <caret line="397" column="30" selection-start-line="397" selection-start-column="11" selection-end-line="397" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2484">
-          <caret line="114" column="70" lean-forward="true" selection-start-line="114" selection-start-column="25" selection-end-line="114" selection-end-column="70" />
+        <state relative-caret-position="391">
+          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -558,25 +557,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/iconButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1137">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="824">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/GradientPane.java">
+    <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="34" column="105" lean-forward="true" selection-start-line="34" selection-start-column="105" selection-end-line="34" selection-end-column="105" />
+        <state relative-caret-position="73">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
