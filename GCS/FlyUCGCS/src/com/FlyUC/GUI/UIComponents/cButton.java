@@ -27,7 +27,7 @@ public class cButton extends JComponent {
     public cButton(){
         this.setBackground(new Color(0,0,0,0));
         this.setButtonHeight(50);
-        this.setButtonWidth(250);
+        this.setButtonWidth(150);
         this.verticalMargin = 10;
         this.horizontalMargin = 10;
         this.fontSize = 20;
@@ -39,7 +39,7 @@ public class cButton extends JComponent {
     public cButton(String caption){
         this.setBackground(new Color(0,0,0,0));
         this.setButtonHeight(50);
-        this.setButtonWidth(250);
+        this.setButtonWidth(170);
         this.verticalMargin = 10;
         this.horizontalMargin = 10;
         this.fontSize = 20;
@@ -111,37 +111,34 @@ public class cButton extends JComponent {
                 //Hovering, but not clicked
             }
         }else{
-            //Not hovering, normal state
-            //int  startX= ((getWidth()/2 - this.getButtonWidth()/2)+this.horizontalMargin + this.getButtonHeight()/2);
+            //Normal State for the button
             int startX = (this.getWidth()/2)-(this.getButtonWidth()/2) + this.getButtonHeight()/2;
-            //int finalX = ((getWidth()-this.getButtonWidth()/2));//-this.horizontalMargin - this.getButtonHeight()/2);
-           // int finalX = (this.getButtonWidth() - (this.getButtonHeight()/2)) - this.horizontalMargin;
+
             int finalX = this.getButtonWidth()-this.getButtonHeight()-this.horizontalMargin;
             int startY = (((this.getHeight()/2 - this.getButtonHeight()/2) + this.verticalMargin));
             System.out.println(startX);
             System.out.println("Final X:");
-            //System.out.println(finalX);
+
             g2.setColor(new Color(this.primaryColor.getRed()-25,this.primaryColor.getGreen()-25,this.primaryColor.getBlue()-25));
             g2.fillOval((int)(this.getWidth()/2)-(this.getButtonWidth()/2) + this.horizontalMargin+this.buttonShadow,startY+this.buttonShadow,this.getButtonHeight(),this.getButtonHeight());
             g2.fillOval((int)((startX + finalX))-(this.getButtonHeight()/2)+this.horizontalMargin+this.buttonShadow,startY + this.buttonShadow,this.getButtonHeight(),this.getButtonHeight());
-            // int finalY = ((getHeight()/2) + this.getButtonHeight() - this.verticalMargin);
-            // int finalY = startY + this.getButtonHeight() - this.verticalMargin;
+
             g2.fillRect(startX+this.horizontalMargin+this.buttonShadow,startY + this.buttonShadow,finalX,this.getButtonHeight());
 
             g2.setColor(this.primaryColor);
             g2.fillOval((int)(this.getWidth()/2)-(this.getButtonWidth()/2) + this.horizontalMargin,startY,this.getButtonHeight(),this.getButtonHeight());
             g2.fillOval((int)((startX + finalX))-(this.getButtonHeight()/2)+this.horizontalMargin,startY,this.getButtonHeight(),this.getButtonHeight());
-           // int finalY = ((getHeight()/2) + this.getButtonHeight() - this.verticalMargin);
-           // int finalY = startY + this.getButtonHeight() - this.verticalMargin;
+
             g2.fillRect(startX+this.horizontalMargin,startY,finalX,this.getButtonHeight());
 
+            g2.setColor(this.foreGroundColor);
 
-            //g2.fillOval(this.verticalMargin/2 + this.horizontalMargin);
-          //FIXME: Button does not center   g2.fillRect((this.getParent().getWidth()/2)+(this.height/2)-this.getWidth(),verticalMargin,(this.width-(this.getHeight()/2)-horizontalMargin),this.height-verticalMargin);
+
+            GradientPaint gp = new GradientPaint(0, buttonHeight - getFontMetrics(buttonFont).getAscent(),new Color(230, 107, 58) ,
+                    getFontMetrics(buttonFont).stringWidth(this.caption), buttonHeight, new Color(255, 81, 84), true);
+            g2.setPaint(gp);
+            g2.drawString(this.caption, (this.getWidth() - getFontMetrics(buttonFont).stringWidth(this.caption))/2, (int)(((this.getHeight() + this.fontSize)/2)+this.verticalMargin/1.5));
         }
-        g2.setColor(this.foreGroundColor);
-        g2.drawString(this.caption, (this.getWidth() - getFontMetrics(buttonFont).stringWidth(this.caption))/2, (int)(((this.getHeight() + this.fontSize)/2)+this.verticalMargin/1.5));
-       // g2.setColor(Color.CYAN);
-       // g2.drawOval((this.getWidth()/2)-5,(this.getHeight()/2)+5,10,10);
+
     }
 }

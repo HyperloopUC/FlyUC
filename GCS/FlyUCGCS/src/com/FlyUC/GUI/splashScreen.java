@@ -14,7 +14,7 @@ public class splashScreen extends JFrame {
     GradientPane backgroundGradient;
     public splashScreen(){
 
-        backgroundGradient = new GradientPane(new Color(255, 27, 58),new Color(255, 41, 74));
+        backgroundGradient = new GradientPane(new Color(235, 27, 58),new Color(255, 81, 84));
         container = getContentPane();
         Dimension screenResolution = Toolkit.getDefaultToolkit().getScreenSize();
         backgroundGradient.setHeight(screenResolution.getHeight());
@@ -22,13 +22,14 @@ public class splashScreen extends JFrame {
         GradientPane layoutManager = backgroundGradient;
         setSize(screenResolution);
         setExtendedState(JFrame.MAXIMIZED_BOTH);
-        setUndecorated(true);
+        setState(Frame.MAXIMIZED_BOTH);
+        //setUndecorated(true);
         setVisible(true);
         //layoutManager.setLayout();
         layoutManager.setLayout(new GridBagLayout());
         btnContinue = new cButton("Continue");
         GridBagConstraints c = new GridBagConstraints();
-        flyUcLogo = new cImageView("FlyUC.png");
+        flyUcLogo = new cImageView("flyuc.png");
         btnContinue = new cButton("Continue");
         btnContinue.setFontColor(new Color(255, 27, 58));
         btnContinue.setPrimaryColor(new Color(240, 240, 240));
