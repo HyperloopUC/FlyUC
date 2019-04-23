@@ -22,7 +22,7 @@ public class GradientPane extends JComponent {
         this.originX = 20;
         this.originY = 20;
         this.setBackground(Color.black);
-
+        this.gradientDistribution = new float[]{0.05f,.95f};
     }
 
     public void setWidth(double x){
@@ -34,7 +34,7 @@ public class GradientPane extends JComponent {
     }
 
     public void setGradientDistribution(float weight1, float weight2){
-
+        this.gradientDistribution = new float[]{weight1, weight2};
     }
 
     public void paintComponent(Graphics g){
@@ -46,17 +46,15 @@ public class GradientPane extends JComponent {
         g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING,RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         g2.setRenderingHint(RenderingHints.KEY_RENDERING,RenderingHints.VALUE_RENDER_QUALITY);
 
-        float[] dist = {0.05f,0.95f};
         Color[] colors = {this.startColor,this.endColor};
         Point2D origin = new Point(20,20);
         Point2D focus = new Point(this.getWidth()/3,this.getHeight()/3);
 
         RadialGradientPaint backGroundGradient = new RadialGradientPaint(origin,(float)(3*Math.sqrt(this.width*this.width + this.height*this.height)/4),
-                focus,dist,colors,MultipleGradientPaint.CycleMethod.NO_CYCLE);
+                focus,this.gradientDistribution,colors,MultipleGradientPaint.CycleMethod.NO_CYCLE);
         g2.setColor(Color.black);
         g2.fillRect(0,0,(int)this.getRootPane().getWidth(),(int)this.getRootPane().getHeight());
         g2.setPaint(backGroundGradient);
-        //FIXME: Change dimensions for non-background panels
         g2.fillRoundRect(0, 0, (int)this.getRootPane().getWidth(), this.getRootPane().getHeight(),40,40);
     }
 }
