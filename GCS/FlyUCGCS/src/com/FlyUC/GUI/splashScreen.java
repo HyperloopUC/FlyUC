@@ -16,7 +16,7 @@ public class splashScreen extends JFrame {
     GradientPane backgroundGradient;
     public splashScreen(){
 
-        backgroundGradient = new GradientPane(new Color(235, 95, 85),new Color(255, 95, 105));
+        backgroundGradient = new GradientPane(new Color(205, 70, 70),new Color(135, 78, 132));
         container = getContentPane();
         Dimension screenResolution = Toolkit.getDefaultToolkit().getScreenSize();
         backgroundGradient.setHeight(screenResolution.getHeight());
