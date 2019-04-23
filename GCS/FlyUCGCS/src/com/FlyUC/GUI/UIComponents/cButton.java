@@ -25,7 +25,9 @@ public class cButton extends JComponent {
     private int buttonShadow;
     private int  collisionBoxWidth;
     private int collisionBoxHeight;
-
+    private Color fontColor1;
+    private Color fontColor2;
+    
     /*
         Default class constructor with no params
         No returns

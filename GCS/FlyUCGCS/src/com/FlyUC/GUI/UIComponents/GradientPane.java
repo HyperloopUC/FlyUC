@@ -13,7 +13,6 @@ public class GradientPane extends JComponent {
     private int originY;
     private float[] gradientDistribution;
 
-
     public GradientPane(Color color1, Color color2 ){
         this.height = 50; //this.getRootPane().getHeight();
         this.width = 50;//this.getRootPane().getWidth();
@@ -33,6 +32,14 @@ public class GradientPane extends JComponent {
         this.height = y;
     }
 
+    public void setOriginX(int x){
+        this.originX = x;
+    }
+
+    public void setOriginY(int y){
+        this.originY = y;
+    }
+
     public void setGradientDistribution(float weight1, float weight2){
         this.gradientDistribution = new float[]{weight1, weight2};
     }
@@ -47,7 +54,7 @@ public class GradientPane extends JComponent {
         g2.setRenderingHint(RenderingHints.KEY_RENDERING,RenderingHints.VALUE_RENDER_QUALITY);
 
         Color[] colors = {this.startColor,this.endColor};
-        Point2D origin = new Point(20,20);
+        Point2D origin = new Point(this.originX,this.originY);
         Point2D focus = new Point(this.getWidth()/3,this.getHeight()/3);
 
         RadialGradientPaint backGroundGradient = new RadialGradientPaint(origin,(float)(3*Math.sqrt(this.width*this.width + this.height*this.height)/4),

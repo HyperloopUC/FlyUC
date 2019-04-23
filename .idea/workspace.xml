@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0187396c-0d08-444a-9386-513530370cc8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/GradientPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/GradientPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,13 +50,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GradientPane.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GradientPane.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/GradientPane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+            <state relative-caret-position="672">
+              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+                <element signature="e#969#970#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
+                <element signature="e#1025#1026#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cButton.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cButton.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2428">
-              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+            <state relative-caret-position="-2447">
+              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1977#1978#0" expanded="true" />
@@ -138,10 +143,10 @@
         <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/UIComponents/GradientPane.java" />
         <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cImageView.java" />
         <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/iconButton.java" />
-        <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java" />
         <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cSpacer.java" />
         <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/splashScreen.java" />
         <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/GradientPane.java" />
+        <option value="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java" />
       </list>
     </option>
   </component>
@@ -395,6 +400,10 @@
           <caret line="43" column="78" selection-start-line="43" selection-start-column="78" selection-end-line="43" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -475,6 +484,10 @@
           <caret line="43" column="78" lean-forward="true" selection-start-line="43" selection-start-column="78" selection-end-line="43" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -545,6 +558,10 @@
           <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -612,6 +629,10 @@
           <caret line="41" column="89" lean-forward="true" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -780,22 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2428">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1977#1978#0" expanded="true" />
-            <element signature="e#2013#2014#0" expanded="true" />
-            <element signature="e#2261#2262#0" expanded="true" />
-            <element signature="e#2298#2299#0" expanded="true" />
-            <element signature="e#2545#2546#0" expanded="true" />
-            <element signature="e#2580#2581#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/splashScreen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1006">
@@ -808,10 +813,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/GradientPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="36" column="40" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
+        <state relative-caret-position="672">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1025#1026#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2447">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1977#1978#0" expanded="true" />
+            <element signature="e#2013#2014#0" expanded="true" />
+            <element signature="e#2261#2262#0" expanded="true" />
+            <element signature="e#2298#2299#0" expanded="true" />
+            <element signature="e#2545#2546#0" expanded="true" />
+            <element signature="e#2580#2581#0" expanded="true" />
           </folding>
         </state>
       </provider>
