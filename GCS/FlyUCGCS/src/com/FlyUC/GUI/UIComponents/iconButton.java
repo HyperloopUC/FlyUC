@@ -42,6 +42,10 @@ public class iconButton extends JComponent {
             }
         }else {
             //Normal State for the button
+            int startX = (int)((getWidth()/2) - (this.buttonRadius/2));
+            int startY = (int)((getHeight()/2) - (this.buttonRadius/2));
+
+
         }
     }
 }

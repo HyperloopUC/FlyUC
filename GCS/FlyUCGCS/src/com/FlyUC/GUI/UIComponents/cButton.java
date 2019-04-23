@@ -23,6 +23,13 @@ public class cButton extends JComponent {
     private Color foreGroundColor;
     private Font buttonFont;
     private int buttonShadow;
+    private int  collisionBoxWidth;
+    private int collisionBoxHeight;
+
+    /*
+        Default class constructor with no params
+        No returns
+     */
 
     public cButton(){
         this.setBackground(new Color(0,0,0,0));
@@ -35,6 +42,12 @@ public class cButton extends JComponent {
         this.caption = "Text";
         this.buttonShadow  = 3;
     }
+
+    /*
+        Class constructor with params
+        @param caption  Caption is the text displayed on the button
+        @returns none
+     */
 
     public cButton(String caption){
         this.setBackground(new Color(0,0,0,0));
@@ -49,40 +62,101 @@ public class cButton extends JComponent {
         this.isHovering = false;
         this.buttonShadow = 3;
     }
-
+    /*
+        Sets the total button width for the button, including margins
+        @param x is the number of pixels needed for the total width of the button prior to scaling
+        @returns none
+     */
     public void setButtonWidth(int x){
         this.buttonWidth = x;
     }
 
+    /*
+        Sets the total button width for the button, including margins
+        @param x is the number of pixels needed for the total width of the button prior to scaling
+        @returns none
+     */
+
     public void setButtonHeight(int y){
         this.buttonHeight = y;
     }
-
+    /*
+        Sets the total button width for the button, including margins
+        @param x is the number of pixels needed for the total width of the button prior to scaling
+        @returns none
+     */
     public void setCaption(String text){
         this.caption = text;
     }
+
+    /*
+        Sets the total button width for the button, including margins
+        @param x is the number of pixels needed for the total width of the button prior to scaling
+        @returns none
+     */
 
     public void setHorizontalMargin(int margin){
         this.horizontalMargin = margin;
         //this.setButtonWidth(this.getWidth()+(2*margin));
     }
-
+    /*
+        Sets the total button width for the button, including margins
+        @param x is the number of pixels needed for the total width of the button prior to scaling
+        @returns none
+    */
     public void setVerticalMargin(int margin){
         this.verticalMargin = margin;
         //this.setHeight(this.getHeight()+(2*margin));
     }
-
+    /*
+        Sets the total button width for the button, including margins
+        @param x is the number of pixels needed for the total width of the button prior to scaling
+        @returns none
+    */
     public void setfontSize(int size) { this.fontSize = size; }
+
+    /*
+        Sets the total button width for the button, including margins
+        @param x is the number of pixels needed for the total width of the button prior to scaling
+        @returns none
+     */
 
     public void setFontColor(Color fontColor){ this.foreGroundColor  = fontColor; }
 
+    /*
+        Sets the total button width for the button, including margins
+        @param x is the number of pixels needed for the total width of the button prior to scaling
+        @returns none
+     */
+
     public void setPrimaryColor(Color backColor) { this.primaryColor = backColor; }
 
+    /*
+        Sets the total button width for the button, including margins
+        @param x is the number of pixels needed for the total width of the button prior to scaling
+        @returns none
+     */
+
     public void setFont(String font){ this.buttonFont = new Font(this.buttonFont.getFontName(), Font.PLAIN, this.fontSize); }
+     /*
+        Gets the total button height including margins
+        @returns buttonHeight
+     */
 
     public int getButtonHeight(){ return this.buttonHeight; }
 
+    /*
+        Gets the total button width including margins
+        @returns buttonWidth
+     */
+
     public int getButtonWidth(){ return this.buttonWidth; }
+
+    /*
+        Updates whether there is a cursor hovering over the mouse or not
+        No params.
+        @returns none
+     */
 
     public void setIsHovering(){
         if(this.isHovering){
@@ -139,6 +213,5 @@ public class cButton extends JComponent {
             g2.setPaint(gp);
             g2.drawString(this.caption, (this.getWidth() - getFontMetrics(buttonFont).stringWidth(this.caption))/2, (int)(((this.getHeight() + this.fontSize)/2)+this.verticalMargin/1.5));
         }
-
     }
 }
