@@ -57,11 +57,15 @@ public class GradientPane extends JComponent {
         Point2D origin = new Point(this.originX,this.originY);
         Point2D focus = new Point(this.getWidth()/3,this.getHeight()/3);
 
-        RadialGradientPaint backGroundGradient = new RadialGradientPaint(origin,(float)(3*Math.sqrt(this.width*this.width + this.height*this.height)/4),
+        RadialGradientPaint backGroundGradient = new RadialGradientPaint(origin,
+                (float)(3*Math.sqrt(this.width*this.width + this.height*this.height)/4),
                 focus,this.gradientDistribution,colors,MultipleGradientPaint.CycleMethod.NO_CYCLE);
+
         g2.setColor(Color.black);
         g2.fillRect(0,0,(int)this.getRootPane().getWidth(),(int)this.getRootPane().getHeight());
         g2.setPaint(backGroundGradient);
-        g2.fillRoundRect(0, 0, (int)this.getRootPane().getWidth(), this.getRootPane().getHeight(),40,40);
+
+        g2.fillRoundRect(0, 0, (int)this.getRootPane().getWidth(), this.getRootPane().getHeight(),
+                40,40);
     }
 }

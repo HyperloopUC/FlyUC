@@ -20,13 +20,7 @@ public class cImageView extends JComponent {
 
     public cImageView(String imageName){
         imageFromFileName(imageName);
-        //this.height = this.myImage.getHeight();
-        //this.width = this.myImage.getWidth();
         this.horizontalMargin = 0;
-        this.verticalMargin = 0;
-        //this.myImage = this.myImage;
-        //this.imagePath = "";
-
     }
 
     public void imageFromFileName(String imageName){
@@ -57,13 +51,14 @@ public class cImageView extends JComponent {
 
         if(IS_HIGH_QUALITY){
             g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-            g2.setRenderingHint(RenderingHints.KEY_ALPHA_INTERPOLATION, RenderingHints.VALUE_ALPHA_INTERPOLATION_QUALITY);
+            g2.setRenderingHint(RenderingHints.KEY_ALPHA_INTERPOLATION,
+                    RenderingHints.VALUE_ALPHA_INTERPOLATION_QUALITY);
             g2.setRenderingHint(RenderingHints.KEY_COLOR_RENDERING, RenderingHints.VALUE_COLOR_RENDER_SPEED);
             g2.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_PURE);
             g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         }
         AffineTransform defaultTransform = g2.getTransform();
-        //AffineTransform at = AffineTransform.getScaleInstance((getWidth()-(2*this.horizontalMargin)/this.getWidth()), (getHeight()-(2*this.verticalMargin))/this.getHeight());
+
         double scaleX =0;
         scaleX = (double)(getWidth() - (2*this.horizontalMargin))/this.myImage.getWidth();
         System.out.println("X total: " + (getWidth()-(2*this.horizontalMargin)) + "Width: " + this.myImage.getWidth());
