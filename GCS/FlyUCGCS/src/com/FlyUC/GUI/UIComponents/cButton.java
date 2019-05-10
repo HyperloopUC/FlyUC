@@ -5,6 +5,8 @@ package com.FlyUC.GUI.UIComponents;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 public class cButton extends JComponent {
 
@@ -40,9 +42,11 @@ public class cButton extends JComponent {
         this.verticalMargin = 10;
         this.horizontalMargin = 10;
         this.fontSize = 20;
-        this.buttonFont = new Font("Helvetica", Font.PLAIN, this.fontSize);
+        this.buttonFont = new Font("Helvetica", Font.BOLD, this.fontSize);
         this.caption = "Text";
         this.buttonShadow  = 3;
+        this.isHovering = false;
+        this.isClicked = false;
     }
 
     /*
@@ -58,7 +62,7 @@ public class cButton extends JComponent {
         this.verticalMargin = 10;
         this.horizontalMargin = 10;
         this.fontSize = 20;
-        this.buttonFont = new Font("Helvetica", Font.PLAIN, this.fontSize);
+        this.buttonFont = new Font("Heiti TC", Font.BOLD, this.fontSize);
         this.caption = caption;
         this.isClicked = false;
         this.isHovering = false;
@@ -166,6 +170,21 @@ public class cButton extends JComponent {
         }else{
             this.isHovering = true;
         }
+        this.repaint();
+    }
+
+    public void setIsClicked(){
+        if(this.isClicked){
+            this.isClicked = false;
+        }else{
+            this.isClicked = true;
+            try{
+                TimeUnit.MILLISECONDS.sleep(500);
+            }catch(InterruptedException e){
+                System.out.println(e);
+            }
+        }
+        this.repaint();
     }
 
     public void paintComponent(Graphics g) {
@@ -180,23 +199,86 @@ public class cButton extends JComponent {
             g2.setRenderingHint(RenderingHints.KEY_STROKE_CONTROL, RenderingHints.VALUE_STROKE_PURE);
             g2.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         }
+
+        int startX = (this.getWidth()/2)-(this.getButtonWidth()/2) + this.getButtonHeight()/2;
+
+        int finalX = this.getButtonWidth()-this.getButtonHeight()-this.horizontalMargin;
+
+        int startY = (((this.getHeight()/2 - this.getButtonHeight()/2) + this.verticalMargin));
+
         if(isHovering){
             if(isClicked) {
                 //Clicked
+                System.out.println("Clicked button state");
+                g2.setColor(this.primaryColor);
+                g2.fillOval((int)(this.getWidth()/2)-(this.getButtonWidth()/2) + this.horizontalMargin,startY,
+                        this.getButtonHeight(),this.getButtonHeight());
+
+                g2.fillOval((int)((startX + finalX))-(this.getButtonHeight()/2)+this.horizontalMargin,startY,
+                        this.getButtonHeight(),this.getButtonHeight());
+
+                g2.fillRect(startX+this.horizontalMargin,startY,finalX,this.getButtonHeight());
+
+                g2.setColor(this.foreGroundColor);
+
+
+                GradientPaint gp = new GradientPaint(0, buttonHeight - getFontMetrics(buttonFont).getAscent(),
+                        new Color(230, 107, 58) ,
+                        getFontMetrics(buttonFont).stringWidth(this.caption), buttonHeight,
+                        new Color(255, 81, 84), true);
+                g2.setPaint(gp);
+
+                g2.drawString(this.caption, (this.getWidth() - getFontMetrics(buttonFont).stringWidth(this.caption))/2,
+                        (int)(((this.getHeight() + this.fontSize)/2)+this.verticalMargin/1.5));
+
+                this.setIsClicked();
             }else{
                 //Hovering, but not clicked
+                //Draw button shadow
+                GradientPaint gp;
+                gp = new GradientPaint(0, 0, new Color(0, 121-20, 145-20) , buttonWidth, buttonHeight,
+                        new Color(120-20, 255-20, 214-20), true);
+
+                g2.setPaint(gp);
+                System.out.println("Hovering button state");
+               // g2.setColor(new Color(this.primaryColor.getRed()-25,this.primaryColor.getGreen()-25,
+               //         this.primaryColor.getBlue()-25));
+
+                g2.fillOval((int)(this.getWidth()/2)-(this.getButtonWidth()/2) + this.horizontalMargin+this.buttonShadow,
+                        startY+this.buttonShadow,this.getButtonHeight(),this.getButtonHeight());
+
+                g2.fillOval((int)((startX + finalX))-(this.getButtonHeight()/2)+this.horizontalMargin+this.buttonShadow,
+                        startY + this.buttonShadow,this.getButtonHeight(),this.getButtonHeight());
+
+                g2.fillRect(startX+this.horizontalMargin+this.buttonShadow,startY + this.buttonShadow,finalX,
+                        this.getButtonHeight());
+
+                //Draw button
+                gp = new GradientPaint(0, 0, new Color(120, 235, 214) , buttonWidth *2, buttonHeight,
+                        new Color(70, 121, 154), true);
+                g2.setPaint(gp);
+
+                g2.fillOval((int)(this.getWidth()/2)-(this.getButtonWidth()/2) + this.horizontalMargin,startY,
+                        this.getButtonHeight(),this.getButtonHeight());
+
+                g2.fillOval((int)((startX + finalX))-(this.getButtonHeight()/2)+this.horizontalMargin,startY,
+                        this.getButtonHeight(),this.getButtonHeight());
+
+                g2.fillRect(startX+this.horizontalMargin,startY,finalX,this.getButtonHeight());
+
+                gp = new GradientPaint(0, buttonHeight - getFontMetrics(buttonFont).getAscent(),
+                        new Color(250, 0, 84) ,
+                        getFontMetrics(buttonFont).stringWidth(this.caption), buttonHeight,
+                        new Color(225, 11, 124), true);
+                g2.setPaint(gp);
             }
         }else{
             //Normal State for the button
-            int startX = (this.getWidth()/2)-(this.getButtonWidth()/2) + this.getButtonHeight()/2;
-
-            int finalX = this.getButtonWidth()-this.getButtonHeight()-this.horizontalMargin;
-            int startY = (((this.getHeight()/2 - this.getButtonHeight()/2) + this.verticalMargin));
-            System.out.println(startX);
-            System.out.println("Final X:");
-
-            g2.setColor(new Color(this.primaryColor.getRed()-25,this.primaryColor.getGreen()-25,
-                    this.primaryColor.getBlue()-25));
+            //Draw button shadow
+            System.out.println("Normal button state");
+            System.out.println(this.isClicked);
+            g2.setColor(new Color(this.primaryColor.getRed()-35,this.primaryColor.getGreen()-35,
+                    this.primaryColor.getBlue()-35));
 
             g2.fillOval((int)(this.getWidth()/2)-(this.getButtonWidth()/2) + this.horizontalMargin+this.buttonShadow,
                     startY+this.buttonShadow,this.getButtonHeight(),this.getButtonHeight());
@@ -207,6 +289,7 @@ public class cButton extends JComponent {
             g2.fillRect(startX+this.horizontalMargin+this.buttonShadow,startY + this.buttonShadow,finalX,
                     this.getButtonHeight());
 
+            //Draw button
             g2.setColor(this.primaryColor);
             g2.fillOval((int)(this.getWidth()/2)-(this.getButtonWidth()/2) + this.horizontalMargin,startY,
                     this.getButtonHeight(),this.getButtonHeight());
@@ -218,15 +301,13 @@ public class cButton extends JComponent {
 
             g2.setColor(this.foreGroundColor);
 
-
             GradientPaint gp = new GradientPaint(0, buttonHeight - getFontMetrics(buttonFont).getAscent(),
-                    new Color(230, 107, 58) ,
+                    new Color(230, 127, 98) ,
                     getFontMetrics(buttonFont).stringWidth(this.caption), buttonHeight,
-                    new Color(255, 81, 84), true);
+                    new Color(255, 101, 84), true);
             g2.setPaint(gp);
-
-            g2.drawString(this.caption, (this.getWidth() - getFontMetrics(buttonFont).stringWidth(this.caption))/2,
-                    (int)(((this.getHeight() + this.fontSize)/2)+this.verticalMargin/1.5));
         }
+        g2.drawString(this.caption, (this.getWidth() - getFontMetrics(buttonFont).stringWidth(this.caption))/2,
+                (int)(((this.getHeight() + this.fontSize)/2)+this.verticalMargin/1.5));
     }
 }

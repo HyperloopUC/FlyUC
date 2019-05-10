@@ -7,8 +7,12 @@ import com.FlyUC.GUI.UIComponents.cSpacer;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
-public class splashScreen extends JFrame {
+public class splashScreen extends JFrame implements MouseListener {
     Container container;
     cButton btnContinue;
     cImageView flyUcLogo;
@@ -36,7 +40,7 @@ public class splashScreen extends JFrame {
         btnContinue = new cButton("Continue");
         btnContinue.setFontColor(new Color(255, 27, 58));
         btnContinue.setPrimaryColor(new Color(240, 240, 240));
-
+        btnContinue.addMouseListener(this);
         layoutManager.setBackground(Color.black);
 
         c.gridx = 0;
@@ -62,4 +66,27 @@ public class splashScreen extends JFrame {
 
         container.add(layoutManager);
     }
+
+    public void mousePressed(MouseEvent e) {
+       // this.btnContinue.setIsHovering();
+    }
+
+    /* Empty method definition. */
+    public void mouseReleased(MouseEvent e) {
+     //   this.btnContinue.setIsHovering();
+    }
+
+    /* Empty method definition. */
+    public void mouseEntered(MouseEvent e) {
+        this.btnContinue.setIsHovering();
+    }
+    /* Empty method definition. */
+    public void mouseExited(MouseEvent e) {
+        this.btnContinue.setIsHovering();
+    }
+
+    public void mouseClicked(MouseEvent e) {
+        this.btnContinue.setIsClicked();
+    }
+
 }
