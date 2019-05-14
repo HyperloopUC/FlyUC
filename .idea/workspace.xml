@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0187396c-0d08-444a-9386-513530370cc8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/UIComponents/cButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/UIComponents/cButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/UIComponents/iconButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/UIComponents/iconButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/splashScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/output/production/FlyUC/com/FlyUC/GUI/splashScreen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/iconButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/iconButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/splashScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/splashScreen.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -110,8 +104,8 @@
       <file leaf-file-name="cButton.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="295" lean-forward="true" selection-start-line="295" selection-end-line="295" />
+            <state relative-caret-position="567">
+              <caret line="303" column="74" selection-start-line="303" selection-start-column="74" selection-end-line="303" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -313,7 +307,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -782,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/GCS/FlyUCGCS/src/com/FlyUC/GUI/UIComponents/cButton.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="295" lean-forward="true" selection-start-line="295" selection-end-line="295" />
+        <state relative-caret-position="567">
+          <caret line="303" column="74" selection-start-line="303" selection-start-column="74" selection-end-line="303" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

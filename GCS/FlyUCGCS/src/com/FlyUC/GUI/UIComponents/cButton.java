@@ -301,7 +301,7 @@ public class cButton extends JComponent {
 
             g2.setColor(this.foreGroundColor);
 
-            GradientPaint gp = new GradientPaint(0, buttonHeight - getFontMetrics(buttonFont).getAscent(),
+            GradientPaint gp = new GradientPaint(0, buttonHeight - getFo  ntMetrics(buttonFont).getAscent(),
                     new Color(230, 127, 98) ,
                     getFontMetrics(buttonFont).stringWidth(this.caption), buttonHeight,
                     new Color(255, 101, 84), true);
